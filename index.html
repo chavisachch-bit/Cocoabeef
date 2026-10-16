@@ -323,7 +323,7 @@ svg.mk-i{color:#5b341f;overflow:visible}
 .dk[data-step="2"] .dk-p[data-step="2"],.dk[data-step="3"] .dk-p:is([data-step="2"],[data-step="3"]),.dk[data-step="4"] .dk-p{opacity:1}
 .dk-t{transition:opacity .3s}
 .art:has(.dk:is([data-step="3"],[data-step="4"])) .dk-t{opacity:0}
-.art:has(a[href="#story"]:hover) .mst.on .rs{-webkit-text-stroke-color:#a2b877}
+.art:has(a[href="#story"]:hover) .mst.on .rs{-webkit-text-stroke-color:#a2b877!important}
 
 /* ABOUT: "สิ่งที่เราเชื่อ" icons draw in, their text fades up (same feel as the home page features) */
 .bico{overflow:visible}
@@ -368,7 +368,7 @@ svg.mk-i{color:#5b341f;overflow:visible}
 /* MEAT: hovering a pin highlights its province label */
 .art:has(.mdot[data-s="2"]:hover) .lb-2,.art:has(.mdot[data-s="3"]:hover) .lb-3,.art:has(.mdot[data-s="4"]:hover) .lb-4,.art:has(.mdot[data-s="5"]:hover) .lb-5,.art:has(.mdot[data-s="6"]:hover) .lb-6{background:#5b341f!important}
 .art:has(.mdot[data-s="2"]:hover) .lb-2 span,.art:has(.mdot[data-s="3"]:hover) .lb-3 span,.art:has(.mdot[data-s="4"]:hover) .lb-4 span,.art:has(.mdot[data-s="5"]:hover) .lb-5 span,.art:has(.mdot[data-s="6"]:hover) .lb-6 span{color:#f5f1e8!important}
-.art:has(.mdot[data-s="2"]:hover) .lb-2,.art:has(.mdot[data-s="3"]:hover) .lb-3,.art:has(.mdot[data-s="4"]:hover) .lb-4,.art:has(.mdot[data-s="5"]:hover) .lb-5,.art:has(.mdot[data-s="6"]:hover) .lb-6{-webkit-text-stroke-color:#f5f1e8}
+.art:has(.mdot[data-s="2"]:hover) .lb-2,.art:has(.mdot[data-s="3"]:hover) .lb-3,.art:has(.mdot[data-s="4"]:hover) .lb-4,.art:has(.mdot[data-s="5"]:hover) .lb-5,.art:has(.mdot[data-s="6"]:hover) .lb-6{-webkit-text-stroke-color:#f5f1e8!important}
 .lbx{transition:background .15s}
 /* MEAT: dark-section photos grow slightly as they fade in */
 .dk-p{transform:scale(.9);transition:opacity .3s,transform .9s cubic-bezier(.2,.7,.3,1)}
@@ -404,7 +404,7 @@ svg.mk-i{color:#5b341f;overflow:visible}
 svg.fc-lk{color:#5b341f}
 .fcard:hover .fc-border{border-color:#a2b877!important}
 .fcard:hover .fc-lk span{color:#a2b877!important}
-.fcard:hover .fc-lk{-webkit-text-stroke-color:#a2b877;color:#a2b877}
+.fcard:hover .fc-lk{-webkit-text-stroke-color:#a2b877!important;color:#a2b877}
 /* hover: every text on the case card turns green (no brown left) */
 .fcard:hover span{color:#a2b877!important}
 .fcard:hover .x{-webkit-text-stroke-color:#a2b877!important}
@@ -440,7 +440,7 @@ svg.fc-lk{color:#5b341f}
 /* AGENT: hero buttons fill brown on hover (Figma Frame 127 Variant4) */
 .art:has(a.lk-a1:hover) .abtn.ab1,.art:has(a.lk-a2:hover) .abtn.ab2{background:#5b341f!important}
 .art:has(a.lk-a1:hover) .abtnt.ab1 span,.art:has(a.lk-a2:hover) .abtnt.ab2 span{color:#f5f1e8!important}
-.art:has(a.lk-a1:hover) .abtnt.ab1,.art:has(a.lk-a2:hover) .abtnt.ab2{-webkit-text-stroke-color:#f5f1e8}
+.art:has(a.lk-a1:hover) .abtnt.ab1,.art:has(a.lk-a2:hover) .abtnt.ab2{-webkit-text-stroke-color:#f5f1e8!important}
 /* AGENT: submit turns green on hover (Figma Frame 561 Variant2) */
 .art:has(button.hot[form="f-agent"]:hover) .subbtn{background:#a2b877!important;border-color:#a2b877!important;box-shadow:none}
 /* FORMS: focused field gets the 1.5px brown outline from the Figma focus state */
@@ -459,7 +459,7 @@ svg.fc-lk{color:#5b341f}
 .acard.fx-on{opacity:1;transform:none;transition:opacity .55s ease-out calc(var(--n)*.18s),transform .65s cubic-bezier(.2,.7,.3,1) calc(var(--n)*.18s)}
 .no-io .acard{opacity:1;transform:none}
 svg.alk{color:#5b341f;overflow:visible}
-.acard:hover .alk,.art:has(a[href="#article"]:hover) .ac1 .alk{color:#a2b877;-webkit-text-stroke-color:#a2b877}
+.acard:hover .alk,.art:has(a[href="#article"]:hover) .ac1 .alk{color:#a2b877;-webkit-text-stroke-color:#a2b877!important}
 .acard:hover .alk span,.art:has(a[href="#article"]:hover) .ac1 .alk span{color:#a2b877!important}
 /* ARTICLE: back button fills brown, buttons darken on hover (Figma Frame 456 / 458 / 459 Variant2) */
 .bkbtn{overflow:visible}.bkbtn rect,.bkbtn path{transition:fill .12s,stroke .12s}
@@ -478,7 +478,9 @@ svg.x{overflow:visible}
 /* MEAT: province names sit above the card layer so they can be clicked like the pins */
 .lbx.mapin,.mapin[class*="lb-"]{z-index:2}
 /* hovering a province name highlights it like hovering its pin */
-.art:has(.lb-2.mapin:hover) .lbx.lb-2{background:#5b341f!important}.art:has(.lb-2.mapin:hover) .t-C.lb-2 span{color:#f5f1e8!important}.art:has(.lb-2.mapin:hover) .t-C.lb-2{-webkit-text-stroke-color:#f5f1e8}.art:has(.lb-3.mapin:hover) .lbx.lb-3{background:#5b341f!important}.art:has(.lb-3.mapin:hover) .t-C.lb-3 span{color:#f5f1e8!important}.art:has(.lb-3.mapin:hover) .t-C.lb-3{-webkit-text-stroke-color:#f5f1e8}.art:has(.lb-4.mapin:hover) .lbx.lb-4{background:#5b341f!important}.art:has(.lb-4.mapin:hover) .t-C.lb-4 span{color:#f5f1e8!important}.art:has(.lb-4.mapin:hover) .t-C.lb-4{-webkit-text-stroke-color:#f5f1e8}.art:has(.lb-5.mapin:hover) .lbx.lb-5{background:#5b341f!important}.art:has(.lb-5.mapin:hover) .t-C.lb-5 span{color:#f5f1e8!important}.art:has(.lb-5.mapin:hover) .t-C.lb-5{-webkit-text-stroke-color:#f5f1e8}.art:has(.lb-6.mapin:hover) .lbx.lb-6{background:#5b341f!important}.art:has(.lb-6.mapin:hover) .t-C.lb-6 span{color:#f5f1e8!important}.art:has(.lb-6.mapin:hover) .t-C.lb-6{-webkit-text-stroke-color:#f5f1e8}
+.art:has(.lb-2.mapin:hover) .lbx.lb-2{background:#5b341f!important}.art:has(.lb-2.mapin:hover) .t-C.lb-2 span{color:#f5f1e8!important}.art:has(.lb-2.mapin:hover) .t-C.lb-2{-webkit-text-stroke-color:#f5f1e8!important}.art:has(.lb-3.mapin:hover) .lbx.lb-3{background:#5b341f!important}.art:has(.lb-3.mapin:hover) .t-C.lb-3 span{color:#f5f1e8!important}.art:has(.lb-3.mapin:hover) .t-C.lb-3{-webkit-text-stroke-color:#f5f1e8!important}.art:has(.lb-4.mapin:hover) .lbx.lb-4{background:#5b341f!important}.art:has(.lb-4.mapin:hover) .t-C.lb-4 span{color:#f5f1e8!important}.art:has(.lb-4.mapin:hover) .t-C.lb-4{-webkit-text-stroke-color:#f5f1e8!important}.art:has(.lb-5.mapin:hover) .lbx.lb-5{background:#5b341f!important}.art:has(.lb-5.mapin:hover) .t-C.lb-5 span{color:#f5f1e8!important}.art:has(.lb-5.mapin:hover) .t-C.lb-5{-webkit-text-stroke-color:#f5f1e8!important}.art:has(.lb-6.mapin:hover) .lbx.lb-6{background:#5b341f!important}.art:has(.lb-6.mapin:hover) .t-C.lb-6 span{color:#f5f1e8!important}.art:has(.lb-6.mapin:hover) .t-C.lb-6{-webkit-text-stroke-color:#f5f1e8!important}
+/* FARM "เรารับซื้อวัวแบบไหนบ้าง": both card outlines sit above their photos so the 1px line is the same on both cards */
+.cbord{z-index:1;pointer-events:none}
 
 /* ---------- PHONES (<768px): stacked layout ---------- */
 @media (max-width:767px){
@@ -1312,7 +1314,7 @@ FARM</span></p></div>
 มาตรฐาน
 สหกรณ์</span></p></div>
 <div class="x t-C" style="-webkit-text-stroke:0.8px #6a4219;paint-order:stroke fill;left:386.5px;top:4247.9px;width:667px;height:17px;justify-content:flex-end;text-align:center;white-space:pre;"><p class="tr"><span style="font-size:40px;color:#6a4219">เรารับซื้อวัวแบบไหนบ้าง</span></p></div>
-<div class="x" style="left:255.9px;top:4344.9px;width:432.1px;height:492px;box-shadow:inset 0 0 0 0.5px #6a4219,0 0 0 0.5px #6a4219;"></div>
+<div class="x cbord" style="left:255.9px;top:4344.9px;width:432.1px;height:492px;box-shadow:inset 0 0 0 0.5px #6a4219,0 0 0 0.5px #6a4219;"></div>
 <div class="x t-C" style="-webkit-text-stroke:0.4px #5b341f;paint-order:stroke fill;left:315.9px;top:4644.8px;width:312px;height:12.4px;justify-content:flex-end;text-align:center;white-space:pre;"><p class="tr"><span style="font-size:32px;color:#5b341f">จองวัวตั้งแต่ต้นน้ำ</span></p></div>
 <div class="x t-C" style="-webkit-text-stroke:0.4px #a2b877;paint-order:stroke fill;left:315.9px;top:4678.5px;width:312px;height:12.4px;justify-content:flex-end;text-align:center;white-space:pre;"><p class="tr"><span style="font-size:32px;color:#a2b877">เหมาซื้อทั้งตัวตั้งแต่เริ่ม</span></p></div>
 <div class="x t-C" style="left:315.9px;top:4738.6px;width:312px;height:49px;justify-content:flex-end;text-align:center;white-space:pre-wrap;"><p class="tr"><span style="font-size:20px;color:#5b341f">หากฟาร์มมีการเก็บข้อมูลสายพันธุ์และประวัติการเลี้ยง
@@ -1330,7 +1332,7 @@ FARM</span></p></div>
 <img class="x" alt="" src="assets/vec/h627-41640.jpg" style="left:752px;top:4344.9px;width:432.1px;height:248.3px;">
 <div class="x" style="left:933.8px;top:4561.1px;width:64.4px;height:53.5px;background:#a2b877;border-radius:3px;clip-path:inset(0.0px 0.0px 0.0px 0.0px);"></div>
 <div class="x t-C" style="-webkit-text-stroke:0.4px #f5f1e8;paint-order:stroke fill;left:940px;top:4573.9px;width:52px;height:28px;justify-content:flex-end;text-align:center;white-space:pre;"><p class="tr"><span style="font-size:64px;color:#f5f1e8">02</span></p></div>
-<div class="x" style="left:752px;top:4344.9px;width:432.1px;height:492px;box-shadow:inset 0 0 0 0.5px #6a4219,0 0 0 0.5px #6a4219;clip-path:inset(0.0px 0.0px 0.0px 0.0px);"></div>
+<div class="x cbord" style="left:752px;top:4344.9px;width:432.1px;height:492px;box-shadow:inset 0 0 0 0.5px #6a4219,0 0 0 0.5px #6a4219;"></div>
 <div class="x" style="left:0px;top:4980.6px;width:1440px;height:740px;background:#efebe2;"></div>
 <div class="x t-C" style="-webkit-text-stroke:0.8px #5b341f;paint-order:stroke fill;left:385.5px;top:5129.1px;width:667px;height:17px;justify-content:flex-end;text-align:center;white-space:pre;"><p class="tr"><span style="font-size:40px;color:#5b341f">เขาทำได้อย่างไร</span></p></div>
 <div class="x fbtn fb1" style="left:663px;top:5597.1px;width:112px;height:39px;border:2px solid #5b341f;border-radius:5px;"></div>
@@ -1904,6 +1906,14 @@ function scaleToWindow(){
 }
 scaleToWindow();
 addEventListener('resize', scaleToWindow);
+/* ---- Short pages (e.g. บทความ): keep the footer (Rectangle 85/Frame 197) pinned to the bottom of the window ---- */
+function fitFoot(){
+  const z = parseFloat(document.documentElement.style.zoom) || 1;
+  const m = document.getElementById('top'), f = document.getElementById('foot');
+  if (m && f) m.style.minHeight = Math.max(0, Math.floor(window.innerHeight / z - f.offsetHeight)) + 'px';
+}
+fitFoot();
+addEventListener('resize', fitFoot);
 
 /* ---- Opening screen: the brown hero fills the window; one scroll snaps to the next section ---- */
 const heroEl = document.querySelector('.hero');
